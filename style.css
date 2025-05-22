@@ -1,0 +1,78 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+/* Layout */
+.dashboard-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 60px 1fr;
+  height: 100vh;
+}
+
+/* Header */
+.header {
+  grid-area: header;
+  background-color: #4f46e5;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-size: 1.5em;
+}
+
+/* Sidebar */
+.sidebar {
+  grid-area: sidebar;
+  background-color: #e0e7ff;
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 15px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #1e40af;
+  font-weight: bold;
+}
+
+/* Main content */
+.main-content {
+  grid-area: main;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  padding: 20px;
+  flex: 1 1 250px;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #4f46e5;
+}
