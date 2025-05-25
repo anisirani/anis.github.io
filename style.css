@@ -106,4 +106,80 @@ main {
   .card {
     padding: 1rem;
   }
+/* Input Section */
+.weather-container {
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  max-width: 600px;
+  text-align: center;
+}
+
+.weather-container input {
+  width: 70%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.weather-container input:focus {
+  border-color: #0077b6;
+}
+
+.weather-container button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0077b6;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.weather-container button:hover {
+  background-color: #005f91;
+}
+
+/* Weather Result Display */
+#weatherResult {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #333;
+  background-color: #e9f7ff;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+/* Page Header Consistency */
+header {
+  background: linear-gradient(to right, #cde9f6, #d9f1ff);
+  padding: 2rem 0;
+  text-align: center;
+  border-bottom: 1px solid #b3d9ea;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #0077b6;
+}
+
+/* Mobile Friendly */
+@media (max-width: 600px) {
+  .weather-container input {
+    width: 100%;
+  }
+
+  .weather-container button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
 }
