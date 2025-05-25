@@ -5,18 +5,85 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Crypto Dashboard</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <style>
+    /* Sticky Footer Layout Fix */
+    html, body {
+      height: 100%;
+    }
+
+    .page-wrapper {
+      min-height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* Crypto Section Styling */
+    .crypto-section {
+      background-color: #fff;
+      padding: 2rem;
+      margin: 2rem auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      max-width: 700px;
+      text-align: center;
+    }
+
+    #cryptoSelect {
+      padding: 0.75rem 1rem;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      outline: none;
+      transition: border-color 0.3s ease;
+    }
+
+    #cryptoSelect:focus {
+      border-color: #0077b6;
+    }
+
+    #cryptoChart {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
 </head>
 <body>
-  <header><h1>Crypto Dashboard</h1></header>
-  <main>
-    <select id="cryptoSelect">
-      <option value="bitcoin">Bitcoin</option>
-      <option value="ethereum">Ethereum</option>
-      <option value="litecoin">Litecoin</option>
-    </select>
-    <canvas id="cryptoChart"></canvas>
-  </main>
+  <div class="page-wrapper">
+    <!-- Hero Header -->
+    <header class="hero">
+      <div class="container">
+        <h1><span class="highlight">💰 Crypto Dashboard</span></h1>
+        <p>Track real-time prices using the CoinGecko API</p>
+      </div>
+    </header>
+
+    <!-- Main Crypto Chart Section -->
+    <main class="container">
+      <section class="crypto-section">
+        <select id="cryptoSelect">
+          <option value="bitcoin">Bitcoin</option>
+          <option value="ethereum">Ethereum</option>
+          <option value="litecoin">Litecoin</option>
+        </select>
+        <canvas id="cryptoChart"></canvas>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 anis — Built with ❤️ and deployed on GitHub Pages</p>
+      </div>
+    </footer>
+  </div>
 
   <script src="jscrypto.js"></script>
 </body>
