@@ -88,14 +88,15 @@ main {
 
 /* Footer */
 .footer {
-  background-color: #cde9f6;
+  background-color: #f5faff;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1.5rem 0;
+  font-size: 0.95rem;
+  color: #333;
+  border-top: 1px solid #dceefc;
   margin-top: 2rem;
-  font-size: 0.9rem;
-  color: #000;
-  border-top: 1px solid #b3d9ea;
 }
+
 
 /* Responsive Typography */
 @media (max-width: 600px) {
