@@ -53,11 +53,27 @@
       max-width: 100%;
       height: auto;
     }
+
+    /* Back to Home Button Style */
+    .back-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #0077b6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    .back-button:hover {
+      background-color: #005f91;
+    }
   </style>
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Hero Header -->
     <header class="hero">
       <div class="container">
         <h1><span class="highlight">💰 Crypto Dashboard</span></h1>
@@ -65,7 +81,6 @@
       </div>
     </header>
 
-    <!-- Main Crypto Chart Section -->
     <main class="container">
       <section class="crypto-section">
         <select id="cryptoSelect">
@@ -74,10 +89,12 @@
           <option value="litecoin">Litecoin</option>
         </select>
         <canvas id="cryptoChart"></canvas>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-button">← Back to Home</a>
       </section>
     </main>
 
-    <!-- Footer -->
     <footer>
       <div class="container">
         <p>© 2025 anis — Built with ❤️ and deployed on GitHub Pages</p>
