@@ -3,40 +3,48 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Dashboard</title>
+  <title>My Dashboard Project</title>
   <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Hi, I'm [Your Name]</h1>
-      <p>Welcome to my API-powered dashboard project.</p>
-    </div>
-  </header>
+  <div class="page-wrapper">
+    <header class="hero">
+      <div class="container">
+        <h1>Hello, I'm <span class="highlight">[Your Name]</span></h1>
+        <p>This is my dashboard project featuring real-time data via public APIs, fully deployed using CI/CD with GitHub Pages.</p>
+      </div>
+    </header>
 
-  <nav>
-    <div class="container nav-links">
-      <a href="weather.html">🌦 Weather Dashboard</a>
-      <a href="crypto.html">💰 Crypto Dashboard</a>
-    </div>
-  </nav>
-
-  <main>
-    <div class="container">
-      <section>
+    <main class="container">
+      <section class="about card">
         <h2>About Me</h2>
         <p>
-          I'm a web developer in training, building interactive dashboards using public APIs, real-time data, and CI/CD tools. This project includes two live dashboards deployed on GitHub Pages.
+          I'm currently pursuing web development and this project demonstrates my ability to design, integrate APIs,
+          and deploy a responsive dashboard system. Technologies used include HTML, CSS, JavaScript, Chart.js, and GitHub Actions.
         </p>
       </section>
-    </div>
-  </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 [Your Name]. Built with HTML, CSS, and JavaScript.</p>
-    </div>
-  </footer>
+      <section class="dashboards">
+        <h2>Explore Dashboards</h2>
+        <div class="dashboard-grid">
+          <a href="weather.html" class="card dashboard-link">
+            <h3>🌦 Weather Dashboard</h3>
+            <p>Live weather stats using the OpenWeatherMap API.</p>
+          </a>
+          <a href="crypto.html" class="card dashboard-link">
+            <h3>💰 Crypto Dashboard</h3>
+            <p>Track real-time prices using the CoinGecko API.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p>© 2025 [Your Name] — Built with ❤️ and deployed on GitHub Pages</p>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
