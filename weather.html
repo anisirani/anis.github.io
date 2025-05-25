@@ -22,11 +22,27 @@
     main {
       flex: 1;
     }
+
+    /* Back to Home Button Style */
+    .back-button {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: #0077b6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+      margin-top: 2rem;
+    }
+
+    .back-button:hover {
+      background-color: #005f91;
+    }
   </style>
 </head>
 <body>
   <div class="page-wrapper">
-    <!-- Consistent Header Styling -->
     <header class="hero">
       <div class="container">
         <h1><span class="highlight">🌦 Weather Dashboard</span></h1>
@@ -34,16 +50,17 @@
       </div>
     </header>
 
-    <!-- Main Weather Section -->
     <main class="container">
       <section class="weather-container">
         <input type="text" id="cityInput" placeholder="Enter city name" />
         <button onclick="getWeather()">Get Weather</button>
         <div id="weatherResult" class="weather-result hidden"></div>
+
+        <!-- Back to Home Button -->
+        <a href="index.html" class="back-button">← Back to Home</a>
       </section>
     </main>
 
-    <!-- Footer with original background color -->
     <footer>
       <div class="container">
         <p>© 2025 anis — Built with ❤️ and deployed on GitHub Pages</p>
